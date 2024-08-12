@@ -13,7 +13,7 @@ This project will extract the data from provided source or files and dump to Dat
 # Build and Test
 
 ### Build
-Go to **RUN and DEBUG** and run the ```Attach to Python Functions```
+Go to **RUN and DEBUG** and run the ```Agri Bot Dump data```
             or
     Use command ```python main.py```
 
