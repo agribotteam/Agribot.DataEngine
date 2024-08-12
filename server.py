@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 import logging
 
-from utils.logger import setup_logging
+from shared.logger import setup_logging
 setup_logging()
 logger = logging.getLogger('AGRI_DUMP')
 
