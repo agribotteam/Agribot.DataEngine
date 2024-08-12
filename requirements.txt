@@ -1,0 +1,6 @@
+# Include all the packages which are requried.
+# Use python version 3.11.5
+
+fastapi==0.92.0
+uvicorn==0.20.0
+python-dotenv==1.0.1
