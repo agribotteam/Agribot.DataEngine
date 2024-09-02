@@ -1,0 +1,27 @@
+2024-09-02 15:40:26 : INFO : None
+2024-09-02 15:40:26 : INFO : 192.168.92.36
+2024-09-02 15:40:26 : INFO : Received request: GET http://192.168.92.36:7071/agri_bot/docs
+2024-09-02 15:40:26 : INFO : Sent response: 200
+2024-09-02 15:40:26 : INFO : Sent response: 200
+2024-09-02 15:40:27 : INFO : None
+2024-09-02 15:40:27 : INFO : 192.168.92.36
+2024-09-02 15:40:27 : INFO : Received request: GET http://192.168.92.36:7071/agri_bot/openapi.json
+2024-09-02 15:40:27 : INFO : Sent response: 200
+2024-09-02 15:40:27 : INFO : Sent response: 200
+2024-09-02 16:12:55 : INFO : None
+2024-09-02 16:12:55 : INFO : 127.0.0.1
+2024-09-02 16:12:55 : INFO : Received request: GET http://localhost:8000/agri_bot/docs
+2024-09-02 16:12:55 : INFO : Sent response: 200
+2024-09-02 16:12:55 : INFO : Sent response: 200
+2024-09-02 16:12:55 : INFO : None
+2024-09-02 16:12:55 : INFO : 127.0.0.1
+2024-09-02 16:12:55 : INFO : Received request: GET http://localhost:8000/agri_bot/openapi.json
+2024-09-02 16:12:55 : INFO : Sent response: 200
+2024-09-02 16:12:55 : INFO : Sent response: 200
+2024-09-02 16:12:58 : INFO : None
+2024-09-02 16:12:58 : INFO : 127.0.0.1
+2024-09-02 16:12:58 : INFO : Received request: GET http://localhost:8000/v1/agri_dump
+2024-09-02 16:12:58 : INFO : succuessfully recived the request.
+2024-09-02 16:12:58 : INFO : Sent response: 200
+2024-09-02 16:12:58 : INFO : Sent response: 200
+ 
