@@ -1,4 +1,5 @@
 import logging.config
+from fastapi import  Request
 import os 
 import logging
 
@@ -38,6 +39,26 @@ LOGGING = {
     },
 
 }
-def setup_logging():
-    logging.config.dictConfig(LOGGING)
+class LoggingMiddleware:
+    def __init__(self, app):
+        self.app = app
 
+        self.setup_logging()
+        
+    def setup_logging(self):
+        logging.config.dictConfig(LOGGING)
+
+    async def __call__(self, scope, receive, send):
+        assert scope["type"] == "http"
+        request = Request(scope, receive=receive)
+        
+        logging.info(f"Received request: {request.method} {request.url}")
+        
+        async def send_with_logging(response):
+            status_code = response.get("status_code", 200)  # Default to 200 if status_code is not present
+            logging.info(f"Sent response: {status_code}")
+            await send(response)
+        
+        response = await self.app(request.scope, receive, send_with_logging)
+        
+        return response
