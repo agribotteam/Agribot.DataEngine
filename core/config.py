@@ -1,6 +1,7 @@
 from enum import Enum
 from typing import List
 from pydantic import BaseSettings
+import os
 
 
 class EnvironmentType(str, Enum):
@@ -19,7 +20,7 @@ class Config(BaseConfig):
     DEFAULT_LOCALE: str = "en_US"
     ENVIRONMENT: str = EnvironmentType.DEVELOPMENT
     PORT: int = 8003
-    ALLOW_ORIGINS: str = "*"
+    ALLOW_ORIGINS: str = os.getenv('ALLOW_ORIGINS','*')
     
     # need to define the environment variables here and if we need we can give default values.
     
